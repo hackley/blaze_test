@@ -1,7 +1,7 @@
 blaze_test
 ==========
 
-Experimenting with Meteor's Blaze templating engine, sans-meteor.
+Experimenting with Meteor's [Blaze](http://meteor.github.io/blaze/docs.html) templating engine, sans-meteor.
 
 
 ### Getting Started
