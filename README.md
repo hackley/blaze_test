@@ -20,4 +20,4 @@ cd blaze_test
 http-server -p 9000
 ```
 
-And visit (localhost:9000/lib)[http://localhost:9000/lib]
+And visit [localhost:9000/lib](http://localhost:9000/lib)
