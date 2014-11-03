@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Blaze Test</title>
+</head>
+<body>
+
+  <script type="text/spacebars" name="main">
+    <div>The newest user is: {{newestUser}}!</div>
+    {{> directory}}
+    <hr/>
+    {{> form}}
+  </script>
+
+  <script type="text/spacebars" name="directory">
+    <div>
+      <h3>Users</h3>
+      <a href="#" class="toggle-order">Toggle Order ({{currentOrder}})</a>
+      <ul>
+        {{#each users}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </script>
+
+  <script type="text/spacebars" name="form">
+    <form>
+      <input type="text" id="new_user_name" placeholder="name">
+      <button>Add User</button>
+    </form>
+  </script>
+
+  <script src="../bower_components/blaze/blaze.js"></script>
+  <script src="controller.js"></script>
+</body>
+</html>
