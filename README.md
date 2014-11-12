@@ -12,12 +12,12 @@ Install Blaze via bower:
 bower install
 ```
 
-Use http-server to preview the app:
+Use Grunt to preview the app:
 
 ```
-npm install http-server -g
-cd blaze_test
-http-server -p 9000
+npm install -g grunt-cli
+npm install
+grunt
 ```
 
-And visit [localhost:9000/lib](http://localhost:9000/lib)
+And visit [localhost:9000](http://localhost:9000)

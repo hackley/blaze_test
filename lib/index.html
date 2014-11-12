@@ -1,11 +1,12 @@
 <html>
 <head>
   <title>Blaze Test</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <script type="text/spacebars" name="main">
-    <div>The newest user is: {{newestUser}}!</div>
+    <div>The newest user is: {{newestUser.name}}!</div>
     {{> directory}}
     <hr/>
     {{> form}}
@@ -17,7 +18,7 @@
       <a href="#" class="toggle-order">Toggle Order ({{order}})</a>
       <ul>
         {{#each users}}
-          <li>{{this}}</li>
+          <li>{{name}}</li>
         {{/each}}
       </ul>
     </div>
@@ -30,7 +31,6 @@
     </form>
   </script>
 
-  <script src="../bower_components/blaze/blaze.js"></script>
-  <script src="controller.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
